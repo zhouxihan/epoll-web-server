@@ -12,4 +12,5 @@ add_executable(server
     ThreadPool.cpp
 )
 
-target_link_libraries(server PRIVATE Threads::Threads)
+# ★ 加上 sqlite3
+target_link_libraries(server PRIVATE Threads::Threads sqlite3)
